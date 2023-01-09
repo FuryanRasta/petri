@@ -4,11 +4,11 @@ order: 1
 
 # Introduction
 
-`petri` is a command line client for the PETRIhub network. PETRIhub users can use `petri` to send transactions and query the blockchain data.
+`petri` is a command line client for the Petri network. Petri users can use `petri` to send transactions and query the blockchain data.
 
 ## Working Directory
 
-The default working directory for the `petri` is `$HOME/.petri`, which is mainly used to save configuration files and data. The PETRIhub `key` data is saved in the working directory of `petri`. You can also specify the `petri`  working directory by `--home`.
+The default working directory for the `petri` is `$HOME/.petri`, which is mainly used to save configuration files and data. The Petri `key` data is saved in the working directory of `petri`. You can also specify the `petri`  working directory by `--home`.
 
 ## Connecting to a Full Node
 

@@ -33,8 +33,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	"github.com/petrinetwork/petrihub/app"
-	"github.com/petrinetwork/petrihub/app/params"
+	"github.com/mage-war/petri/app"
+	"github.com/mage-war/petri/app/params"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the
@@ -72,9 +72,9 @@ func NewRootCmd() (*cobra.Command, params.EncodingConfig) {
 
 			converter.handlePreRun(cmd, args)
 
-			customTemplate, customPETRIhubConfig := initAppConfig()
+			customTemplate, customPetriConfig := initAppConfig()
 			customTMConfig := initTendermintConfig()
-			return server.InterceptConfigsPreRunHandler(cmd, customTemplate, customPETRIhubConfig, customTMConfig)
+			return server.InterceptConfigsPreRunHandler(cmd, customTemplate, customPetriConfig, customTMConfig)
 		},
 		PersistentPostRun: func(cmd *cobra.Command, _ []string) {
 			converter.handlePostRun(cmd)

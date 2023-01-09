@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The module combines `service` to achieve decentralized injection from trusted Oracles such as `Chainlink` to PETRIhub Oracle. Each data collection task is called a feed, and its underlying implementation depends on the `service` module. Feed life cycle
+The module combines `service` to achieve decentralized injection from trusted Oracles such as `Chainlink` to Petri Oracle. Each data collection task is called a feed, and its underlying implementation depends on the `service` module. Feed life cycle
 It is basically the same as the `Service` RequestContext (paused, running), and is used to store off-chain data on the chain through Oracle nodes. In addition, you can only operate `Feed` through your Profiler account, and you cannot delete it. You can only pause the feed. Including the following operations:
 
 - Create Feed
@@ -36,7 +36,7 @@ petri tx oracle create \
     --threshold=1 \
     --aggregate-func="avg" \
     --value-json-path="high" \
-    --chain-id="petrihub-test" \
+    --chain-id="petri-test" \
     --from=node0 \
     --fees=0.3petri \
     --broadcast-mode=block
@@ -48,7 +48,7 @@ After the `Feed` is created, the collection task is in the `paused` state, and n
 
 ```bash
 petri tx oracle start test-feed \
-    --chain-id="petrihub-test" \
+    --chain-id="petri-test" \
     --from=node0 \
     --fees=0.3petri \
     --broadcast-mode=block
@@ -60,7 +60,7 @@ Since `Feed` cannot be deleted once it is created, it will consume the balance o
 
 ```bash
 petri tx oracle pause test-feed \
-    --chain-id="petrihub-test" \
+    --chain-id="petri-test" \
     --from=node0 \
     --fees=0.3petri \
     --broadcast-mode=block
@@ -77,7 +77,7 @@ petri tx oracle edit test-feed \
     --service-fee-cap=1petri \
     --timeout=6 \
     --threshold=5 \
-    --chain-id="petrihub-test" \
+    --chain-id="petri-test" \
     --from=node0 \
     --fees=0.3petri \
     --broadcast-mode=block

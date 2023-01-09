@@ -28,7 +28,7 @@ Supposed that Alice swaps BTC for PETRI with Bob. The atomic swap process betwee
 
   The secret will be disclosed while the HTLC is claimed successfully by Bob on Bitcoin. Alice will perfom the same claim to the locked PETRI with the secret before the expiration time on PETRI Hub.
 
-## PETRIhub HTLC Specification
+## Petri HTLC Specification
 
 ### Create HTLC message
 

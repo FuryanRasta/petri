@@ -60,7 +60,7 @@ petri tx service define \
     --author-description=<author description>
     --tags=tag1,tag2 \
     --schemas=<schemas content or path/to/schemas.json> \
-    --chain-id=petrihub \
+    --chain-id=petri \
     --from=<key-name> \
     --fees=0.3petri
 ```
@@ -141,7 +141,7 @@ petri tx service bind [flags]
 | --------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- | -------- |
 | --service-name  |         | Service name                                                                                                                  | Yes      |
 | --deposit       |         | Deposit of the binding                                                                                                        | Yes      |
-| --pricing       |         | Pricing content or file path, which is an instance of [Petrihub Service Pricing JSON Schema](../features/service-pricing.json) | Yes      |
+| --pricing       |         | Pricing content or file path, which is an instance of [Petri Service Pricing JSON Schema](../features/service-pricing.json) | Yes      |
 | --qos           |         | Minimum response time                                                                                                         | Yes      |
 | --options       |         | Non-functional requirements options                                                                                           | Yes      |
 | --provider      |         | Provider address, default to the owner                                                                                        |          |
@@ -157,7 +157,7 @@ petri tx service bind \
     --pricing=<pricing content or path/to/pricing.json> \
     --qos=50 \
     --options=<non-functional requirements options content or path/to/options.json> \
-    --chain-id=petrihub \
+    --chain-id=petri \
     --from=<key-name> \
     --fees=0.3petri
 ```
@@ -205,7 +205,7 @@ petri tx service update-binding [service-name] [provider-address] [flags]
 | Name, shorthand | Default | Description                                                                                                                                       | Required |
 | --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | --deposit       |         | Deposit added for the binding, not updated if empty                                                                                               |          |
-| --pricing       |         | Pricing content or file path, which is an instance of [Petrihub Service Pricing JSON Schema](../features/service-pricing.md), not updated if empty |          |
+| --pricing       |         | Pricing content or file path, which is an instance of [Petri Service Pricing JSON Schema](../features/service-pricing.md), not updated if empty |          |
 | --qos           |         | Minimum response time, not updated if set to 0                                                                                                    |          |
 | --options       |         | Non-functional requirements options                                                                                                               |          |
 
@@ -267,7 +267,7 @@ petri tx service enable [service-name] [provider-address] [flags]
 The following example enables an unavailable service binding with the additional 10 PETRI deposit.
 
 ```bash
-petri tx service enable <service name> <provider-address> --chain-id=petrihub --from=<key-name> --fees=0.3petri --deposit=10petri
+petri tx service enable <service name> <provider-address> --chain-id=petri --from=<key-name> --fees=0.3petri --deposit=10petri
 ```
 
 ## petri tx service refund-deposit
@@ -283,7 +283,7 @@ petri tx service refund-deposit [service-name] [provider-address] [flags]
 Before refunding, you should [disable](#petri-tx-service-disable) the service binding first.
 
 ```bash
-petri tx service refund-deposit <service name> <provider-address> --chain-id=petrihub --from=<key-name> --fees=0.3petri
+petri tx service refund-deposit <service name> <provider-address> --chain-id=petri --from=<key-name> --fees=0.3petri
 ```
 
 ## petri tx service call
@@ -303,7 +303,7 @@ petri tx service call [flags]
 | --service-fee-cap |         | Maximum service fee to pay for a single request                                                                        | Yes      |
 | --data            |         | Content or file path of the request input, which is an Input JSON Schema instance                                      | Yes      |
 | --timeout         |         | Request timeout                                                                                                        | Yes      |
-| --repeated        | false   | Indicate if the reqeust is repetitive (Temporarily disabled in petrihub-v1.0.0, will be activated after a few versions) |          |
+| --repeated        | false   | Indicate if the reqeust is repetitive (Temporarily disabled in petri-v1.0.0, will be activated after a few versions) |          |
 | --frequency       |         | Request frequency when repeated, default to `timeout`                                                                  |          |
 | --total           |         | Request count when repeated, -1 means unlimited                                                                        |          |
 
@@ -319,7 +319,7 @@ petri tx service call \
     --repeated \
     --frequency=150 \
     --total=100 \
-    --chain-id=petrihub \
+    --chain-id=petri \
     --from=<key name> \
     --fees=0.3petri
 ```
@@ -333,7 +333,7 @@ petri tx service call \
     },
     "body": {
         "id": "1",
-        "name": "petrinetwork",
+        "name": "irisnet",
         "data": "facedata"
     }
 }
@@ -398,7 +398,7 @@ petri tx service respond [flags]
 | Name, shorthand | Default | Description                                                                                                                                | Required |
 | --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
 | --request-id    |         | ID of the request to respond to                                                                                                            | Yes      |
-| --result        |         | Content or file path of the response result, which is an instance of [Petrihub Service Result JSON Schema](../features/service-result.json) | Yes      |
+| --result        |         | Content or file path of the response result, which is an instance of [Petri Service Result JSON Schema](../features/service-result.json) | Yes      |
 | --data          |         | Content or file path of the response output, which is an Output JSON Schema instance                                                       |          |
 
 ### Respond to a service request
@@ -408,7 +408,7 @@ petri tx service respond \
     --request-id=<request-id> \
     --result=<response result or path/to/result.json> \
     --data=<response output or path/to/output.json>
-    --chain-id=petrihub \
+    --chain-id=petri \
     --from=<key-name> \
     --fees=0.3petri
 ```
@@ -510,7 +510,7 @@ petri tx service update <request-context-id> \
     --timeout=0 \
     --frequency=150 \
     --total=100 \
-    --chain-id=petrihub \
+    --chain-id=petri \
     --from=<key name> \
     --fees=0.3petri
 ```

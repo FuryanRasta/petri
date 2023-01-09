@@ -22,7 +22,7 @@ curl http://34.82.96.8:26658/
 enable = true # whether enable stat_sync; set true
 rpc_servers = "34.82.96.8:26657,34.77.68.145:26657" # RPC server address which the node connects to
 trust_height = # Set to the block height of the latest snapshot
-trust_hash = "" #Set to the hash corresponding to the latest snapshot block height (trust height), which can be checked via https://petrihub.iobscan.io/#/block/<trust_height>.
+trust_hash = "" #Set to the hash corresponding to the latest snapshot block height (trust height), which can be checked via https://petri.iobscan.io/#/block/<trust_height>.
 trust_period = "168h0m0s"
 discovery_time = "15s"
 temp_dir = ""
@@ -37,4 +37,4 @@ petri start
 ## Others
 
 1. If any problem occurs during chain starting, you can execute `petri unsafe-reset-all` to reset the node and repeat the steps above.
-2. If you can't find solutions to the current issue, please contact us via [PETRInetwork Discord channel](https://discord.com/invite/bmhu9F9xbX) for help.
+2. If you can't find solutions to the current issue, please contact us via [MAGEwar Discord channel](https://discord.com/invite/bmhu9F9xbX) for help.

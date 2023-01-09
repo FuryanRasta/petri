@@ -56,13 +56,13 @@ import (
 	tibcclienttypes "github.com/bianjieai/tibc-go/modules/tibc/core/02-client/types"
 	tibchost "github.com/bianjieai/tibc-go/modules/tibc/core/24-host"
 
-	migratehtlc "github.com/petrinetwork/petrihub/migrate/htlc"
-	migrateservice "github.com/petrinetwork/petrihub/migrate/service"
-	migratetibc "github.com/petrinetwork/petrihub/migrate/tibc"
-	"github.com/petrinetwork/petrihub/modules/guardian"
-	guardiantypes "github.com/petrinetwork/petrihub/modules/guardian/types"
-	"github.com/petrinetwork/petrihub/modules/mint"
-	minttypes "github.com/petrinetwork/petrihub/modules/mint/types"
+	migratehtlc "github.com/mage-war/petri/migrate/htlc"
+	migrateservice "github.com/mage-war/petri/migrate/service"
+	migratetibc "github.com/mage-war/petri/migrate/tibc"
+	"github.com/mage-war/petri/modules/guardian"
+	guardiantypes "github.com/mage-war/petri/modules/guardian/types"
+	"github.com/mage-war/petri/modules/mint"
+	minttypes "github.com/mage-war/petri/modules/mint/types"
 )
 
 // RegisterUpgradePlan register a handler of upgrade plan
@@ -96,7 +96,7 @@ func (app *PetriApp) RegisterUpgradePlan(cfg module.Configurator) {
 				}},
 			)
 			tibcclienttypes.SetDefaultGenesisState(tibcclienttypes.GenesisState{
-				NativeChainName: "petrihub-mainnet",
+				NativeChainName: "petri-mainnet",
 			})
 
 			if err := migratetibc.CreateClient(ctx,

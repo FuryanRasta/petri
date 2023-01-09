@@ -10,7 +10,7 @@ For general concepts, please refer to [General Concepts](general-concepts.md)
 
 ## General Questions
 
-### How to Become an PETRIhub Validator
+### How to Become an Petri Validator
 
 Refer to [Join The Mainnet](../get-started/mainnet.md)
 
@@ -226,7 +226,7 @@ The default number of files Linux can open (per-process) is `1024`. `petri` is k
 
 Compare the two `Consensus Pubkey`:
 
-- From [Explorer](https://petrihub.iobscan.io/#/staking), you can find the `Consensus Pubkey` which you declared for your validator in the Validator Detail page.
+- From [Explorer](https://petri.iobscan.io/#/staking), you can find the `Consensus Pubkey` which you declared for your validator in the Validator Detail page.
 
 - Check the `Consensus Pubkey` which you are now using via `petri tendermint show-validator --home=<petri-home>`
 

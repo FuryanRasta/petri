@@ -26,10 +26,10 @@ cargo install tmkms --features=yubihsm --version=0.10.0-beta2
 
 ## Initialization
 
-Initialize configuration files for PETRIhub
+Initialize configuration files for Petri
 
 ```bash
-tmkms init -n petrihub /path/to/kms/home
+tmkms init -n petri /path/to/kms/home
 ```
 
 ## Configuration
@@ -42,7 +42,7 @@ To enable KMS, you need to edit the `priv_validator_laddr` in your `<petri-home>
 priv_validator_laddr = "localhost:26658"
 ```
 
-Then, downLoad [priv_validator_state.json example](https://github.com/petrinetwork/petrihub/blob/master/docs/tools/priv_validator_state.json) and modify all field values to match your `<petri-home>/data/priv_validator_state.json` values.
+Then, downLoad [priv_validator_state.json example](https://github.com/mage-war/petri/blob/master/docs/tools/priv_validator_state.json) and modify all field values to match your `<petri-home>/data/priv_validator_state.json` values.
 
 Next, you just need to edit the configuration file `/path/to/kms/home/tmkms.toml` as follows:
 
@@ -64,7 +64,7 @@ tmkms start -c /path/to/kms/home/tmkms.toml
 
 Detailed information on how to setup a KMS with YubiHSM2 can be found [here](https://github.com/iqlusioninc/tmkms/blob/master/README.yubihsm.md).
 
-If you want to import an existing PETRIhub private_key:
+If you want to import an existing Petri private_key:
 
 ```bash
 tmkms yubihsm keys import <petri_home>/config/priv_validator.json -i <id> -t json -c /path/to/kms/home/tmkms.toml

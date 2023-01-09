@@ -27,7 +27,7 @@ petri <command>
 | [start](local-testnet.md#petri-start)                             | Run the full node                                                                                               |
 | [unsafe-reset-all](local-testnet.md#petri-unsafe-reset-all)       | Resets the blockchain database, removes address book files, and resets priv_validator.json to the genesis state |
 | [tendermint](local-testnet.md#petri-tendermint)                   | Tendermint subcommands                                                                                          |
-| [testnet](local-testnet.md#build-and-init)                       | Initialize files for a Petrihub testnet                                                                          |
+| [testnet](local-testnet.md#build-and-init)                       | Initialize files for a Petri testnet                                                                          |
 | [reset](local-testnet.md#petri-reset)                             | Reset app state to the specified height                                                                         |
 | [export](export.md)                                              | Export state to JSON                                                                                            |
 | version                                                          | Show executable binary version                                                                                  |

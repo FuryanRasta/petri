@@ -6,9 +6,9 @@ order: 4
 
 ## Introduction
 
-PETRIhub can export the blockchain state and output to a json-format string which can be used as the genesis file of a new blockchain.
+Petri can export the blockchain state and output to a json-format string which can be used as the genesis file of a new blockchain.
 
-By default, PETRIhub stores snapshots of every 10,000 blocks and the last 100 blocks. You can export the blockchain state from any existing snapshot height.
+By default, Petri stores snapshots of every 10,000 blocks and the last 100 blocks. You can export the blockchain state from any existing snapshot height.
 
 If you want to export the state from a nonexisting snapshot height, you need to [reset](local-testnet.md#petri-reset) the blockchain state to the specified height first.
 

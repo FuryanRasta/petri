@@ -4,7 +4,7 @@ order: 1
 
 # General Concepts
 
-## PETRIhub Node Types
+## Petri Node Types
 
 ### Full Node
 
@@ -18,7 +18,7 @@ The [PETRI Hub](../get-started/intro.md#petri-hub) is based on [Cosmos SDK](http
 
 Only top 100 bonded full nodes can become validator nodes, the rest will become candidates. The situation will change as delegation amount changes.
 
-## PETRIhub User Types
+## Petri User Types
 
 ### Validator Operator
 
@@ -54,22 +54,22 @@ The validator and its delegators can share the following rewards by proportion:
 
   Block Inflation exists to incentivize PETRI holders to stake. The more staked PETRI tokens are, more secure the network become(Read more about [Staking](../features/staking.md)).
 
-  Block Inflation will be [distributed every block](../features/mint.md). [Inflation rate](../features/mint.md) in PETRIhub for the first year will be 4%.  **This ration could be adjusted by `parameter-change` proposals**.
+  Block Inflation will be [distributed every block](../features/mint.md). [Inflation rate](../features/mint.md) in Petri for the first year will be 4%.  **This ration could be adjusted by `parameter-change` proposals**.
   In this way, loose PETRI will devalue year by year.
 
 - **Block Proposer Reward**
 
-  In PETRIhub, the probability for being a proposer is proportional to the validator's bonded tokens. If one proposed block is finalized, the proposer gets extra rewards for it.
+  In Petri, the probability for being a proposer is proportional to the validator's bonded tokens. If one proposed block is finalized, the proposer gets extra rewards for it.
 
 - **Fee**
 
-  Each transaction needs a [fee](fee.md#fee) for compensating validators' work[Gas](fee.md#gas). These fees can be paid with PETRI and may later in any tokens which are whitelisted by the PETRIhub's governance. Fees are distributed to validators in proportion to their stake. A minimum fee/gas ration is set in PETRIhub.
+  Each transaction needs a [fee](fee.md#fee) for compensating validators' work[Gas](fee.md#gas). These fees can be paid with PETRI and may later in any tokens which are whitelisted by the Petri's governance. Fees are distributed to validators in proportion to their stake. A minimum fee/gas ration is set in Petri.
 
 Each validator receives revenue in proportion to its total stake. However, before this revenue is distributed to its delegators, the validator can apply a commission for providing staking services.
 
 ### Staking Rewards Calculation Formula
 
-The following formulas are based on the current [PETRIhub Mainnet Params](gov-params.md).
+The following formulas are based on the current [Petri Mainnet Params](gov-params.md).
 
 #### Annual Rewards (ignore proposer rewards and fees)
 

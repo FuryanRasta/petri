@@ -10,9 +10,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 
-	"github.com/petrinetwork/petrihub/modules/mint"
-	"github.com/petrinetwork/petrihub/modules/mint/types"
-	"github.com/petrinetwork/petrihub/simapp"
+	"github.com/mage-war/petri/modules/mint"
+	"github.com/mage-war/petri/modules/mint/types"
+	"github.com/mage-war/petri/simapp"
 )
 
 func TestBeginBlocker(t *testing.T) {

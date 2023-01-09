@@ -40278,10 +40278,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrihub/guardian/supers:
+  /petri/guardian/supers:
     get:
       summary: Supers returns all Supers
-      operationId: PetrihubGuardianSupers
+      operationId: PetriGuardianSupers
       responses:
         '200':
           description: A successful response.
@@ -40405,10 +40405,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrihub/mint/params:
+  /petri/mint/params:
     get:
       summary: Params queries the mint parameters
-      operationId: PetrihubMintParams
+      operationId: PetriMintParams
       responses:
         '200':
           description: A successful response.
@@ -40475,10 +40475,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /petrimod/coinswap/pools:
+  /irismod/coinswap/pools:
     get:
       summary: LiquidityPools returns all the liquidity pools available
-      operationId: PetrimodCoinswapLiquidityPools
+      operationId: IrismodCoinswapLiquidityPools
       responses:
         '200':
           description: A successful response.
@@ -40643,12 +40643,12 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/coinswap/pools/{lpt_denom}:
+  /irismod/coinswap/pools/{lpt_denom}:
     get:
       summary: |-
         LiquidityPool returns the liquidity pool for the provided
         lpt_denom
-      operationId: PetrimodCoinswapLiquidityPool
+      operationId: IrismodCoinswapLiquidityPool
       responses:
         '200':
           description: A successful response.
@@ -40744,9 +40744,9 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/farm/farmers/{farmer}:
+  /irismod/farm/farmers/{farmer}:
     get:
-      operationId: PetrimodFarmFarmer
+      operationId: IrismodFarmFarmer
       responses:
         '200':
           description: A successful response.
@@ -40825,10 +40825,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/farm/params:
+  /irismod/farm/params:
     get:
       summary: Params queries the htlc parameters
-      operationId: PetrimodFarmParams
+      operationId: IrismodFarmParams
       responses:
         '200':
           description: A successful response.
@@ -40878,9 +40878,9 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /petrimod/farm/pool/{id}:
+  /irismod/farm/pool/{id}:
     get:
-      operationId: PetrimodFarmFarmPool
+      operationId: IrismodFarmFarmPool
       responses:
         '200':
           description: A successful response.
@@ -40997,9 +40997,9 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/farm/pools:
+  /irismod/farm/pools:
     get:
-      operationId: PetrimodFarmFarmPools
+      operationId: IrismodFarmFarmPools
       responses:
         '200':
           description: A successful response.
@@ -41188,10 +41188,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/htlc/htlcs/{id}:
+  /irismod/htlc/htlcs/{id}:
     get:
       summary: HTLC queries the HTLC by the specified hash lock
-      operationId: PetrimodHtlcHTLC
+      operationId: IrismodHtlcHTLC
       responses:
         '200':
           description: A successful response.
@@ -41296,10 +41296,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/htlc/params:
+  /irismod/htlc/params:
     get:
       summary: Params queries the htlc parameters
-      operationId: PetrimodHtlcParams
+      operationId: IrismodHtlcParams
       responses:
         '200':
           description: A successful response.
@@ -41388,10 +41388,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /petrimod/htlc/supplies:
+  /irismod/htlc/supplies:
     get:
       summary: AssetSupplies queries the supplies of all assets
-      operationId: PetrimodHtlcAssetSupplies
+      operationId: IrismodHtlcAssetSupplies
       responses:
         '200':
           description: A successful response.
@@ -41490,10 +41490,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /petrimod/htlc/supplies/{denom}:
+  /irismod/htlc/supplies/{denom}:
     get:
       summary: AssetSupply queries the supply of an asset
-      operationId: PetrimodHtlcAssetSupply
+      operationId: IrismodHtlcAssetSupply
       responses:
         '200':
           description: A successful response.
@@ -41595,10 +41595,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/oracle/feeds:
+  /irismod/oracle/feeds:
     get:
       summary: Feeds queries the feed list
-      operationId: PetrimodOracleFeeds
+      operationId: IrismodOracleFeeds
       responses:
         '200':
           description: A successful response.
@@ -41775,10 +41775,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/oracle/feeds/{feed_name}:
+  /irismod/oracle/feeds/{feed_name}:
     get:
       summary: Feed queries the feed
-      operationId: PetrimodOracleFeed
+      operationId: IrismodOracleFeed
       responses:
         '200':
           description: A successful response.
@@ -41885,10 +41885,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/oracle/feeds/{feed_name}/values:
+  /irismod/oracle/feeds/{feed_name}/values:
     get:
       summary: FeedValue queries the feed value
-      operationId: PetrimodOracleFeedValue
+      operationId: IrismodOracleFeedValue
       responses:
         '200':
           description: A successful response.
@@ -41934,10 +41934,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/random/queue:
+  /irismod/random/queue:
     get:
       summary: RandomRequestQueue queries the random request queue
-      operationId: PetrimodRandomRandomRequestQueue
+      operationId: IrismodRandomRandomRequestQueue
       responses:
         '200':
           description: A successful response.
@@ -42008,10 +42008,10 @@ paths:
           format: int64
       tags:
         - Query
-  /petrimod/random/randoms/{req_id}:
+  /irismod/random/randoms/{req_id}:
     get:
       summary: Random queries the random result
-      operationId: PetrimodRandomRandom
+      operationId: IrismodRandomRandom
       responses:
         '200':
           description: A successful response.
@@ -42057,10 +42057,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/record/records/{record_id}:
+  /irismod/record/records/{record_id}:
     get:
       summary: Record queries the record by the given record ID
-      operationId: PetrimodRecordRecord
+      operationId: IrismodRecordRecord
       responses:
         '200':
           description: A successful response.
@@ -42117,10 +42117,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/bindings/{service_name}:
+  /irismod/service/bindings/{service_name}:
     get:
       summary: Bindings returns all service Bindings with service name and owner
-      operationId: PetrimodServiceBindings
+      operationId: IrismodServiceBindings
       responses:
         '200':
           description: A successful response.
@@ -42272,10 +42272,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/service/bindings/{service_name}/{provider}:
+  /irismod/service/bindings/{service_name}/{provider}:
     get:
       summary: Binding returns service Binding with service name and provider
-      operationId: PetrimodServiceBinding
+      operationId: IrismodServiceBinding
       responses:
         '200':
           description: A successful response.
@@ -42353,10 +42353,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/contexts/{request_context_id}:
+  /irismod/service/contexts/{request_context_id}:
     get:
       summary: RequestContext returns the request context
-      operationId: PetrimodServiceRequestContext
+      operationId: IrismodServiceRequestContext
       responses:
         '200':
           description: A successful response.
@@ -42484,10 +42484,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/definitions/{service_name}:
+  /irismod/service/definitions/{service_name}:
     get:
       summary: Definition returns service definition
-      operationId: PetrimodServiceDefinition
+      operationId: IrismodServiceDefinition
       responses:
         '200':
           description: A successful response.
@@ -42540,10 +42540,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/fees/{provider}:
+  /irismod/service/fees/{provider}:
     get:
       summary: EarnedFees returns the earned service fee of one provider
-      operationId: PetrimodServiceEarnedFees
+      operationId: IrismodServiceEarnedFees
       responses:
         '200':
           description: A successful response.
@@ -42595,10 +42595,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/owners/{owner}/withdraw-address:
+  /irismod/service/owners/{owner}/withdraw-address:
     get:
       summary: WithdrawAddress returns the withdraw address of the binding owner
-      operationId: PetrimodServiceWithdrawAddress
+      operationId: IrismodServiceWithdrawAddress
       responses:
         '200':
           description: A successful response.
@@ -42637,10 +42637,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/params:
+  /irismod/service/params:
     get:
       summary: Params queries the service parameters
-      operationId: PetrimodServiceParams
+      operationId: IrismodServiceParams
       responses:
         '200':
           description: A successful response.
@@ -42739,10 +42739,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /petrimod/service/requests/{request_context_id}/{batch_counter}:
+  /irismod/service/requests/{request_context_id}/{batch_counter}:
     get:
       summary: RequestsByReqCtx returns all requests of one service call batch
-      operationId: PetrimodServiceRequestsByReqCtx
+      operationId: IrismodServiceRequestsByReqCtx
       responses:
         '200':
           description: A successful response.
@@ -42900,10 +42900,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/service/requests/{request_id}:
+  /irismod/service/requests/{request_id}:
     get:
       summary: Request returns the request
-      operationId: PetrimodServiceRequest
+      operationId: IrismodServiceRequest
       responses:
         '200':
           description: A successful response.
@@ -42980,10 +42980,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/requests/{service_name}/{provider}:
+  /irismod/service/requests/{service_name}/{provider}:
     get:
       summary: Request returns all requests of one service with provider
-      operationId: PetrimodServiceRequests
+      operationId: IrismodServiceRequests
       responses:
         '200':
           description: A successful response.
@@ -43138,10 +43138,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/service/responses/{request_context_id}/{batch_counter}:
+  /irismod/service/responses/{request_context_id}/{batch_counter}:
     get:
       summary: Responses returns all responses of one service call batch
-      operationId: PetrimodServiceResponses
+      operationId: IrismodServiceResponses
       responses:
         '200':
           description: A successful response.
@@ -43271,10 +43271,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/service/responses/{request_id}:
+  /irismod/service/responses/{request_id}:
     get:
       summary: Response returns the response of request
-      operationId: PetrimodServiceResponse
+      operationId: IrismodServiceResponse
       responses:
         '200':
           description: A successful response.
@@ -43326,10 +43326,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/service/schemas/{schema_name}:
+  /irismod/service/schemas/{schema_name}:
     get:
       summary: Schema returns the schema
-      operationId: PetrimodServiceSchema
+      operationId: IrismodServiceSchema
       responses:
         '200':
           description: A successful response.
@@ -43366,10 +43366,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/token/params:
+  /irismod/token/params:
     get:
       summary: Params queries the token parameters
-      operationId: PetrimodTokenParams
+      operationId: IrismodTokenParams
       responses:
         '200':
           description: A successful response.
@@ -43616,10 +43616,10 @@ paths:
                         }
       tags:
         - Query
-  /petrimod/token/tokens:
+  /irismod/token/tokens:
     get:
       summary: Tokens returns the token list
-      operationId: PetrimodTokenTokens
+      operationId: IrismodTokenTokens
       responses:
         '200':
           description: A successful response.
@@ -44067,10 +44067,10 @@ paths:
           type: boolean
       tags:
         - Query
-  /petrimod/token/tokens/{denom}:
+  /irismod/token/tokens/{denom}:
     get:
       summary: Token returns token with token name
-      operationId: PetrimodTokenToken
+      operationId: IrismodTokenToken
       responses:
         '200':
           description: A successful response.
@@ -44439,10 +44439,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/token/tokens/{symbol}/fees:
+  /irismod/token/tokens/{symbol}/fees:
     get:
       summary: Fees returns the fees to issue or mint a token
-      operationId: PetrimodTokenFees
+      operationId: IrismodTokenFees
       responses:
         '200':
           description: A successful response.
@@ -44674,10 +44674,10 @@ paths:
           type: string
       tags:
         - Query
-  /petrimod/token/total_burn:
+  /irismod/token/total_burn:
     get:
       summary: TotalBurn queries all the burnt coins
-      operationId: PetrimodTokenTotalBurn
+      operationId: IrismodTokenTotalBurn
       responses:
         '200':
           description: A successful response.
@@ -76825,7 +76825,7 @@ definitions:
         type: string
         format: uint64
     title: QuerySupplyResponse is the response type for the Query/Supply RPC method
-  petrihub.guardian.AccountType:
+  petri.guardian.AccountType:
     type: string
     enum:
       - GENESIS
@@ -76835,13 +76835,13 @@ definitions:
       - GENESIS: GENESIS defines a genesis account type
        - ORDINARY: ORDINARY defines a ordinary account type
     title: AccountType defines the super account type
-  petrihub.guardian.MsgAddSuperResponse:
+  petri.guardian.MsgAddSuperResponse:
     type: object
     title: MsgAddSuperResponse defines the Msg/AddSuper response type
-  petrihub.guardian.MsgDeleteSuperResponse:
+  petri.guardian.MsgDeleteSuperResponse:
     type: object
     title: MsgDeleteSuperResponse defines the Msg/DeleteSuper response type
-  petrihub.guardian.QuerySupersResponse:
+  petri.guardian.QuerySupersResponse:
     type: object
     properties:
       supers:
@@ -76894,7 +76894,7 @@ definitions:
 
           request message has used PageRequest
     title: QuerySupersResponse is response type for the Query/Supers RPC method
-  petrihub.guardian.Super:
+  petri.guardian.Super:
     type: object
     properties:
       description:
@@ -76914,7 +76914,7 @@ definitions:
       added_by:
         type: string
     title: Super defines the super standard
-  petrihub.mint.Params:
+  petri.mint.Params:
     type: object
     properties:
       mint_denom:
@@ -76924,7 +76924,7 @@ definitions:
         type: string
         title: inflation rate
     title: Params defines mint module's parameters
-  petrihub.mint.QueryParamsResponse:
+  petri.mint.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -76965,7 +76965,7 @@ definitions:
 
           request message has used PageRequest
     title: QueryParamsResponse is response type for the Query/Parameters RPC method
-  petrimod.coinswap.Input:
+  irismod.coinswap.Input:
     type: object
     properties:
       address:
@@ -76983,7 +76983,7 @@ definitions:
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
     title: Input defines the properties of order's input
-  petrimod.coinswap.MsgAddLiquidityResponse:
+  irismod.coinswap.MsgAddLiquidityResponse:
     type: object
     properties:
       mint_token:
@@ -76999,7 +76999,7 @@ definitions:
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
     title: MsgAddLiquidityResponse defines the Msg/AddLiquidity response type
-  petrimod.coinswap.MsgAddUnilateralLiquidityResponse:
+  irismod.coinswap.MsgAddUnilateralLiquidityResponse:
     type: object
     properties:
       mint_token:
@@ -77015,7 +77015,7 @@ definitions:
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
     title: MsgAddLiquidityUniResponse defines the Msg/AddLiquidityUni response type
-  petrimod.coinswap.MsgRemoveLiquidityResponse:
+  irismod.coinswap.MsgRemoveLiquidityResponse:
     type: object
     properties:
       withdraw_coins:
@@ -77033,7 +77033,7 @@ definitions:
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
     title: MsgRemoveLiquidityResponse defines the Msg/RemoveLiquidity response type
-  petrimod.coinswap.MsgRemoveUnilateralLiquidityResponse:
+  irismod.coinswap.MsgRemoveUnilateralLiquidityResponse:
     type: object
     properties:
       withdraw_coins:
@@ -77055,10 +77055,10 @@ definitions:
       response
 
       type
-  petrimod.coinswap.MsgSwapCoinResponse:
+  irismod.coinswap.MsgSwapCoinResponse:
     type: object
     title: MsgSwapCoinResponse defines the Msg/SwapCoin response type
-  petrimod.coinswap.Output:
+  irismod.coinswap.Output:
     type: object
     properties:
       address:
@@ -77076,7 +77076,7 @@ definitions:
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
     title: Output defines the properties of order's output
-  petrimod.coinswap.PoolInfo:
+  irismod.coinswap.PoolInfo:
     type: object
     properties:
       id:
@@ -77126,7 +77126,7 @@ definitions:
       fee:
         type: string
         title: liquidity pool fee
-  petrimod.coinswap.QueryLiquidityPoolResponse:
+  irismod.coinswap.QueryLiquidityPoolResponse:
     type: object
     properties:
       pool:
@@ -77193,7 +77193,7 @@ definitions:
       RPC
 
       method
-  petrimod.coinswap.QueryLiquidityPoolsResponse:
+  irismod.coinswap.QueryLiquidityPoolsResponse:
     type: object
     properties:
       pools:
@@ -77289,7 +77289,7 @@ definitions:
       RPC
 
       method
-  petrimod.farm.CommunityPoolCreateFarmProposal:
+  irismod.farm.CommunityPoolCreateFarmProposal:
     type: object
     properties:
       title:
@@ -77345,7 +77345,7 @@ definitions:
     title: |-
       CommunityPoolCreateFarmProposal is a gov Content type for creating a farm
       pool with community pool
-  petrimod.farm.FarmPoolEntry:
+  irismod.farm.FarmPoolEntry:
     type: object
     properties:
       id:
@@ -77418,7 +77418,7 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  petrimod.farm.LockedInfo:
+  irismod.farm.LockedInfo:
     type: object
     properties:
       pool_id:
@@ -77449,32 +77449,15 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  petrimod.farm.MsgAdjustPoolResponse:
+  irismod.farm.MsgAdjustPoolResponse:
     type: object
-  petrimod.farm.MsgCreatePoolResponse:
+  irismod.farm.MsgCreatePoolResponse:
     type: object
-  petrimod.farm.MsgCreatePoolWithCommunityPoolResponse:
+  irismod.farm.MsgCreatePoolWithCommunityPoolResponse:
     type: object
-  petrimod.farm.MsgDestroyPoolResponse:
+  irismod.farm.MsgDestroyPoolResponse:
     type: object
-  petrimod.farm.MsgHarvestResponse:
-    type: object
-    properties:
-      reward:
-        type: array
-        items:
-          type: object
-          properties:
-            denom:
-              type: string
-            amount:
-              type: string
-          description: |-
-            Coin defines a token with a denomination and an amount.
-
-            NOTE: The amount field is an Int which implements the custom method
-            signatures required by gogoproto.
-  petrimod.farm.MsgStakeResponse:
+  irismod.farm.MsgHarvestResponse:
     type: object
     properties:
       reward:
@@ -77491,7 +77474,7 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  petrimod.farm.MsgUnstakeResponse:
+  irismod.farm.MsgStakeResponse:
     type: object
     properties:
       reward:
@@ -77508,7 +77491,24 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  petrimod.farm.Params:
+  irismod.farm.MsgUnstakeResponse:
+    type: object
+    properties:
+      reward:
+        type: array
+        items:
+          type: object
+          properties:
+            denom:
+              type: string
+            amount:
+              type: string
+          description: |-
+            Coin defines a token with a denomination and an amount.
+
+            NOTE: The amount field is an Int which implements the custom method
+            signatures required by gogoproto.
+  irismod.farm.Params:
     type: object
     properties:
       pool_creation_fee:
@@ -77528,7 +77528,7 @@ definitions:
         format: int64
       tax_rate:
         type: string
-  petrimod.farm.QueryFarmPoolResponse:
+  irismod.farm.QueryFarmPoolResponse:
     type: object
     properties:
       pool:
@@ -77616,7 +77616,7 @@ definitions:
                 method
 
                 signatures required by gogoproto.
-  petrimod.farm.QueryFarmPoolsResponse:
+  irismod.farm.QueryFarmPoolsResponse:
     type: object
     properties:
       pools:
@@ -77733,7 +77733,7 @@ definitions:
           corresponding
 
           request message has used PageRequest
-  petrimod.farm.QueryFarmerResponse:
+  irismod.farm.QueryFarmerResponse:
     type: object
     properties:
       list:
@@ -77778,7 +77778,7 @@ definitions:
       height:
         type: string
         format: int64
-  petrimod.farm.QueryParamsResponse:
+  irismod.farm.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -77804,7 +77804,7 @@ definitions:
             format: int64
           tax_rate:
             type: string
-  petrimod.htlc.AssetParam:
+  irismod.htlc.AssetParam:
     type: object
     properties:
       denom:
@@ -77849,7 +77849,7 @@ definitions:
         type: string
         format: uint64
         title: Maximum swap block lock
-  petrimod.htlc.AssetSupply:
+  irismod.htlc.AssetSupply:
     type: object
     properties:
       incoming_supply:
@@ -77902,7 +77902,7 @@ definitions:
           signatures required by gogoproto.
       time_elapsed:
         type: string
-  petrimod.htlc.HTLC:
+  irismod.htlc.HTLC:
     type: object
     properties:
       id:
@@ -77969,7 +77969,7 @@ definitions:
            - OUTGOING: OUTGOING defines an htlt outgoing direction.
         title: SwapDirection defines the direction of an HTLT
     title: HTLC defines the struct of an HTLC
-  petrimod.htlc.HTLCState:
+  irismod.htlc.HTLCState:
     type: string
     enum:
       - HTLC_STATE_OPEN
@@ -77981,16 +77981,16 @@ definitions:
        - HTLC_STATE_COMPLETED: HTLC_STATE_COMPLETED defines a completed state.
        - HTLC_STATE_REFUNDED: HTLC_STATE_REFUNDED defines a refunded state.
     title: HTLCState defines the state of an HTLC
-  petrimod.htlc.MsgClaimHTLCResponse:
+  irismod.htlc.MsgClaimHTLCResponse:
     type: object
     title: MsgClaimHTLCResponse defines the Msg/ClaimHTLC response type
-  petrimod.htlc.MsgCreateHTLCResponse:
+  irismod.htlc.MsgCreateHTLCResponse:
     type: object
     properties:
       id:
         type: string
     title: MsgCreateHTLCResponse defines the Msg/CreateHTLC response type
-  petrimod.htlc.Params:
+  irismod.htlc.Params:
     type: object
     properties:
       asset_params:
@@ -78041,7 +78041,7 @@ definitions:
               format: uint64
               title: Maximum swap block lock
     title: Params defines token module's parameters
-  petrimod.htlc.QueryAssetSuppliesResponse:
+  irismod.htlc.QueryAssetSuppliesResponse:
     type: object
     properties:
       asset_supplies:
@@ -78116,7 +78116,7 @@ definitions:
       RPC
 
       method
-  petrimod.htlc.QueryAssetSupplyResponse:
+  irismod.htlc.QueryAssetSupplyResponse:
     type: object
     properties:
       asset_supply:
@@ -78187,7 +78187,7 @@ definitions:
     title: |-
       QueryAssetSupplyResponse is response type for the Query/AssetSupply RPC
       method
-  petrimod.htlc.QueryHTLCResponse:
+  irismod.htlc.QueryHTLCResponse:
     type: object
     properties:
       htlc:
@@ -78261,7 +78261,7 @@ definitions:
             title: SwapDirection defines the direction of an HTLT
         title: HTLC defines the struct of an HTLC
     title: QueryBalanceResponse is the response type for the Query/HTLC RPC method
-  petrimod.htlc.QueryParamsResponse:
+  irismod.htlc.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -78318,7 +78318,7 @@ definitions:
                   title: Maximum swap block lock
         title: Params defines token module's parameters
     title: QueryParamsResponse is response type for the Query/Parameters RPC method
-  petrimod.htlc.SupplyLimit:
+  irismod.htlc.SupplyLimit:
     type: object
     properties:
       limit:
@@ -78333,7 +78333,7 @@ definitions:
       time_based_limit:
         type: string
         title: the supply limit for an asset for each time period
-  petrimod.htlc.SwapDirection:
+  irismod.htlc.SwapDirection:
     type: string
     enum:
       - NONE
@@ -78345,7 +78345,7 @@ definitions:
        - INCOMING: INCOMING defines an htlt incoming direction.
        - OUTGOING: OUTGOING defines an htlt outgoing direction.
     title: SwapDirection defines the direction of an HTLT
-  petrimod.oracle.Feed:
+  irismod.oracle.Feed:
     type: object
     properties:
       feed_name:
@@ -78364,7 +78364,7 @@ definitions:
       creator:
         type: string
     title: Feed defines the feed standard
-  petrimod.oracle.FeedContext:
+  irismod.oracle.FeedContext:
     type: object
     properties:
       feed:
@@ -78434,7 +78434,7 @@ definitions:
 
           byte
     title: FeedContext defines the feed context struct
-  petrimod.oracle.FeedValue:
+  irismod.oracle.FeedValue:
     type: object
     properties:
       data:
@@ -78443,19 +78443,19 @@ definitions:
         type: string
         format: date-time
     title: FeedValue defines the feed result standard
-  petrimod.oracle.MsgCreateFeedResponse:
+  irismod.oracle.MsgCreateFeedResponse:
     type: object
     title: MsgCreateFeedResponse defines the Msg/CreateFeed response type
-  petrimod.oracle.MsgEditFeedResponse:
+  irismod.oracle.MsgEditFeedResponse:
     type: object
     title: MsgEditFeedResponse defines the Msg/EditFeed response type
-  petrimod.oracle.MsgPauseFeedResponse:
+  irismod.oracle.MsgPauseFeedResponse:
     type: object
     title: MsgPauseFeedResponse defines the Msg/PauseFeed response type
-  petrimod.oracle.MsgStartFeedResponse:
+  irismod.oracle.MsgStartFeedResponse:
     type: object
     title: MsgStartFeedResponse defines the Msg/StartFeed response type
-  petrimod.oracle.QueryFeedResponse:
+  irismod.oracle.QueryFeedResponse:
     type: object
     properties:
       feed:
@@ -78532,7 +78532,7 @@ definitions:
               byte
         title: FeedContext defines the feed context struct
     title: QueryFeedResponse is response type for the Query/Feed RPC method
-  petrimod.oracle.QueryFeedValueResponse:
+  irismod.oracle.QueryFeedValueResponse:
     type: object
     properties:
       feed_values:
@@ -78547,7 +78547,7 @@ definitions:
               format: date-time
           title: FeedValue defines the feed result standard
     title: QueryFeedValueResponse is response type for the Query/FeedValue RPC method
-  petrimod.oracle.QueryFeedsResponse:
+  irismod.oracle.QueryFeedsResponse:
     type: object
     properties:
       feeds:
@@ -78649,7 +78649,7 @@ definitions:
                    PageResponse page = 2;
            }
     title: QueryFeedsResponse is response type for the Query/Feeds RPC method
-  petrimod.service.RequestContextState:
+  irismod.service.RequestContextState:
     type: string
     enum:
       - RUNNING
@@ -78663,10 +78663,10 @@ definitions:
     title: |-
       RequestContextState is a type alias that represents a request status as a
       byte
-  petrimod.random.MsgRequestRandomResponse:
+  irismod.random.MsgRequestRandomResponse:
     type: object
     title: MsgRequestRandomResponse defines the Msg/RequestRandom response type
-  petrimod.random.QueryRandomRequestQueueResponse:
+  irismod.random.QueryRandomRequestQueueResponse:
     type: object
     properties:
       requests:
@@ -78706,7 +78706,7 @@ definitions:
     title: |-
       QueryRandomRequestQueueResponse is response type for the
       Query/RandomRequestQueue RPC method
-  petrimod.random.QueryRandomResponse:
+  irismod.random.QueryRandomResponse:
     type: object
     properties:
       random:
@@ -78721,7 +78721,7 @@ definitions:
             type: string
         title: Random defines the feed standard
     title: QueryParametersResponse is response type for the Query/Random RPC method
-  petrimod.random.Random:
+  irismod.random.Random:
     type: object
     properties:
       request_tx_hash:
@@ -78732,7 +78732,7 @@ definitions:
       value:
         type: string
     title: Random defines the feed standard
-  petrimod.random.Request:
+  irismod.random.Request:
     type: object
     properties:
       height:
@@ -78761,7 +78761,7 @@ definitions:
       service_context_id:
         type: string
     title: Request defines the random request standard
-  petrimod.record.Content:
+  irismod.record.Content:
     type: object
     properties:
       digest:
@@ -78773,13 +78773,13 @@ definitions:
       meta:
         type: string
     title: Content defines the detailed information for a record
-  petrimod.record.MsgCreateRecordResponse:
+  irismod.record.MsgCreateRecordResponse:
     type: object
     properties:
       id:
         type: string
     title: MsgCreateRecordResponse defines the Msg/CreateRecord response type
-  petrimod.record.QueryRecordResponse:
+  irismod.record.QueryRecordResponse:
     type: object
     properties:
       record:
@@ -78805,7 +78805,7 @@ definitions:
             type: string
         title: Record defines the record standard
     title: QueryRecordResponse is the response type for the Query/Record RPC method
-  petrimod.record.Record:
+  irismod.record.Record:
     type: object
     properties:
       tx_hash:
@@ -78827,84 +78827,84 @@ definitions:
       creator:
         type: string
     title: Record defines the record standard
-  petrimod.service.MsgBindServiceResponse:
+  irismod.service.MsgBindServiceResponse:
     type: object
     title: MsgBindServiceResponse defines the Msg/BindService response type
-  petrimod.service.MsgCallServiceResponse:
+  irismod.service.MsgCallServiceResponse:
     type: object
     properties:
       request_context_id:
         type: string
     title: MsgCallServiceResponse defines the Msg/CallService response type
-  petrimod.service.MsgDefineServiceResponse:
+  irismod.service.MsgDefineServiceResponse:
     type: object
     title: MsgDefineServiceResponse defines the Msg/DefineService response type
-  petrimod.service.MsgDisableServiceBindingResponse:
+  irismod.service.MsgDisableServiceBindingResponse:
     type: object
     title: |-
       MsgDisableServiceBindingResponse defines the Msg/DisableServiceBinding
       response type
-  petrimod.service.MsgEnableServiceBindingResponse:
+  irismod.service.MsgEnableServiceBindingResponse:
     type: object
     title: >-
       MsgEnableServiceBindingResponse defines the Msg/EnableServiceBinding
       response
 
       type
-  petrimod.service.MsgKillRequestContextResponse:
+  irismod.service.MsgKillRequestContextResponse:
     type: object
     title: |-
       MsgKillRequestContextResponse defines the Msg/KillRequestContext response
       type
-  petrimod.service.MsgPauseRequestContextResponse:
+  irismod.service.MsgPauseRequestContextResponse:
     type: object
     title: >-
       MsgPauseRequestContextResponse defines the Msg/PauseRequestContext
       response
 
       type
-  petrimod.service.MsgRefundServiceDepositResponse:
+  irismod.service.MsgRefundServiceDepositResponse:
     type: object
     title: >-
       MsgRefundServiceDepositResponse defines the Msg/RefundServiceDeposit
       response
 
       type
-  petrimod.service.MsgRespondServiceResponse:
+  irismod.service.MsgRespondServiceResponse:
     type: object
     title: MsgRespondServiceResponse defines the Msg/RespondService response type
-  petrimod.service.MsgSetWithdrawAddressResponse:
+  irismod.service.MsgSetWithdrawAddressResponse:
     type: object
     title: |-
       MsgSetWithdrawAddressResponse defines the Msg/SetWithdrawAddress response
       type
-  petrimod.service.MsgStartRequestContextResponse:
+  irismod.service.MsgStartRequestContextResponse:
     type: object
     title: >-
       MsgStartRequestContextResponse defines the Msg/StartRequestContext
       response
 
       type
-  petrimod.service.MsgUpdateRequestContextResponse:
+  irismod.service.MsgUpdateRequestContextResponse:
     type: object
     title: >-
       MsgUpdateRequestContextResponse defines the Msg/UpdateRequestContext
       response
 
       type
-  petrimod.service.MsgUpdateServiceBindingResponse:
+  irismod.service.MsgUpdateServiceBindingResponse:
     type: object
     title: >-
       MsgUpdateServiceBindingResponse defines the Msg/UpdateServiceBinding
       response
 
       type
-  petrimod.service.MsgWithdrawEarnedFeesResponse:
+  irismod.service.MsgWithdrawEarnedFeesResponse:
     type: object
     title: |-
       MsgWithdrawEarnedFeesResponse defines the Msg/WithdrawEarnedFees response
       type
-  petrimod.service.Params:
+  irismod.service.Params:
     type: object
     properties:
       max_request_timeout:
@@ -78943,7 +78943,7 @@ definitions:
       restricted_service_fee_denom:
         type: boolean
     title: Params defines service module's parameters
-  petrimod.service.QueryBindingResponse:
+  irismod.service.QueryBindingResponse:
     type: object
     properties:
       service_binding:
@@ -78986,7 +78986,7 @@ definitions:
             type: string
         title: ServiceBinding defines a standard for service binding
     title: QueryDefinitionResponse is response type for the Query/Binding RPC method
-  petrimod.service.QueryBindingsResponse:
+  irismod.service.QueryBindingsResponse:
     type: object
     properties:
       service_bindings:
@@ -79060,7 +79060,7 @@ definitions:
     title: >-
       QueryDefinitionsResponse is response type for the Query/Bindings RPC
       method
-  petrimod.service.QueryDefinitionResponse:
+  irismod.service.QueryDefinitionResponse:
     type: object
     properties:
       service_definition:
@@ -79084,7 +79084,7 @@ definitions:
     title: >-
       QueryDefinitionResponse is response type for the Query/Definition RPC
       method
-  petrimod.service.QueryEarnedFeesResponse:
+  irismod.service.QueryEarnedFeesResponse:
     type: object
     properties:
       fees:
@@ -79104,7 +79104,7 @@ definitions:
     title: >-
       QueryEarnedFeesResponse is response type for the Query/EarnedFees RPC
       method
-  petrimod.service.QueryParamsResponse:
+  irismod.service.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -79179,7 +79179,7 @@ definitions:
     title: >-
       QueryParametersResponse is response type for the Query/Parameters RPC
       method
-  petrimod.service.QueryRequestContextResponse:
+  irismod.service.QueryRequestContextResponse:
     type: object
     properties:
       request_context:
@@ -79276,7 +79276,7 @@ definitions:
       RPC
 
       method
-  petrimod.service.QueryRequestResponse:
+  irismod.service.QueryRequestResponse:
     type: object
     properties:
       request:
@@ -79322,7 +79322,7 @@ definitions:
             format: uint64
         title: Request defines a standard for request
     title: QueryRequestResponse is response type for the Query/Request RPC method
-  petrimod.service.QueryRequestsByReqCtxResponse:
+  irismod.service.QueryRequestsByReqCtxResponse:
     type: object
     properties:
       requests:
@@ -79401,7 +79401,7 @@ definitions:
       Query/RequestsByReqCtx
 
       RPC method
-  petrimod.service.QueryRequestsResponse:
+  irismod.service.QueryRequestsResponse:
     type: object
     properties:
       requests:
@@ -79476,7 +79476,7 @@ definitions:
 
           request message has used PageRequest
     title: QueryRequestsResponse is response type for the Query/Requests RPC method
-  petrimod.service.QueryResponseResponse:
+  irismod.service.QueryResponseResponse:
     type: object
     properties:
       response:
@@ -79497,7 +79497,7 @@ definitions:
             format: uint64
         title: Response defines a standard for response
     title: QueryResponseResponse is response type for the Query/Response RPC method
-  petrimod.service.QueryResponsesResponse:
+  irismod.service.QueryResponsesResponse:
     type: object
     properties:
       responses:
@@ -79547,13 +79547,13 @@ definitions:
 
           request message has used PageRequest
     title: QueryResponsesResponse is response type for the Query/Responses RPC method
-  petrimod.service.QuerySchemaResponse:
+  irismod.service.QuerySchemaResponse:
     type: object
     properties:
       schema:
         type: string
     title: QuerySchemaResponse is response type for the Query/Schema RPC method
-  petrimod.service.QueryWithdrawAddressResponse:
+  irismod.service.QueryWithdrawAddressResponse:
     type: object
     properties:
       withdraw_address:
@@ -79563,7 +79563,7 @@ definitions:
       Query/WithdrawAddress
 
       RPC method
-  petrimod.service.Request:
+  irismod.service.Request:
     type: object
     properties:
       id:
@@ -79602,7 +79602,7 @@ definitions:
         type: string
         format: uint64
     title: Request defines a standard for request
-  petrimod.service.RequestContext:
+  irismod.service.RequestContext:
     type: object
     properties:
       service_name:
@@ -79688,7 +79688,7 @@ definitions:
 
           byte
     title: RequestContext defines a standard for request context
-  petrimod.service.RequestContextBatchState:
+  irismod.service.RequestContextBatchState:
     type: string
     enum:
       - BATCH_RUNNING
@@ -79700,7 +79700,7 @@ definitions:
     title: |-
       RequestContextBatchState is a type alias that represents a request batch
       status as a byte
-  petrimod.service.Response:
+  irismod.service.Response:
     type: object
     properties:
       provider:
@@ -79717,7 +79717,7 @@ definitions:
         type: string
         format: uint64
     title: Response defines a standard for response
-  petrimod.service.ServiceBinding:
+  irismod.service.ServiceBinding:
     type: object
     properties:
       service_name:
@@ -79753,7 +79753,7 @@ definitions:
       owner:
         type: string
     title: ServiceBinding defines a standard for service binding
-  petrimod.service.ServiceDefinition:
+  irismod.service.ServiceDefinition:
     type: object
     properties:
       name:
@@ -79771,24 +79771,24 @@ definitions:
       schemas:
         type: string
     title: ServiceDefinition defines a standard for service definition
-  petrimod.token.MsgBurnTokenResponse:
+  irismod.token.MsgBurnTokenResponse:
     type: object
     title: MsgBurnTokenResponse defines the Msg/BurnToken response type
-  petrimod.token.MsgEditTokenResponse:
+  irismod.token.MsgEditTokenResponse:
     type: object
     title: MsgEditTokenResponse defines the Msg/EditToken response type
-  petrimod.token.MsgIssueTokenResponse:
+  irismod.token.MsgIssueTokenResponse:
     type: object
     title: MsgIssueTokenResponse defines the Msg/IssueToken response type
-  petrimod.token.MsgMintTokenResponse:
+  irismod.token.MsgMintTokenResponse:
     type: object
     title: MsgMintTokenResponse defines the Msg/MintToken response type
-  petrimod.token.MsgTransferTokenOwnerResponse:
+  irismod.token.MsgTransferTokenOwnerResponse:
     type: object
     title: |-
       MsgTransferTokenOwnerResponse defines the Msg/TransferTokenOwner response
       type
-  petrimod.token.Params:
+  irismod.token.Params:
     type: object
     properties:
       token_tax_rate:
@@ -79808,7 +79808,7 @@ definitions:
       mint_token_fee_ratio:
         type: string
     title: Params defines token module's parameters
-  petrimod.token.QueryFeesResponse:
+  irismod.token.QueryFeesResponse:
     type: object
     properties:
       exist:
@@ -79838,7 +79838,7 @@ definitions:
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
     title: QueryFeesResponse is response type for the Query/Fees RPC method
-  petrimod.token.QueryParamsResponse:
+  irismod.token.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -79894,7 +79894,7 @@ definitions:
     title: >-
       QueryParametersResponse is response type for the Query/Parameters RPC
       method
-  petrimod.token.QueryTokenResponse:
+  irismod.token.QueryTokenResponse:
     type: object
     properties:
       Token:
@@ -80055,7 +80055,7 @@ definitions:
                 "value": "1.212s"
               }
     title: QueryTokenResponse is response type for the Query/Token RPC method
-  petrimod.token.QueryTokensResponse:
+  irismod.token.QueryTokensResponse:
     type: object
     properties:
       Tokens:
@@ -80248,7 +80248,7 @@ definitions:
 
           request message has used PageRequest
     title: QueryTokensResponse is response type for the Query/Tokens RPC method
-  petrimod.token.QueryTotalBurnResponse:
+  irismod.token.QueryTotalBurnResponse:
     type: object
     properties:
       burned_coins:

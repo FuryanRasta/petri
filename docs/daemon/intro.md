@@ -4,11 +4,11 @@ order: 1
 
 # Introduction
 
-The `petri` executable program is the entry point for running an PETRIhub node. All the validator nodes and full nodes need to install the `petri` and launching the daemon to join the PETRIhub network. You can also use `petri` to start your own test network locally.
+The `petri` executable program is the entry point for running an Petri node. All the validator nodes and full nodes need to install the `petri` and launching the daemon to join the Petri network. You can also use `petri` to start your own test network locally.
 
 ## Hardware Requeirment
 
-It's recommended that you run petrihub nodes on Linux Server.
+It's recommended that you run petri nodes on Linux Server.
 
 ### Minimum Requeirment
 
@@ -27,7 +27,7 @@ In the `petri` command, you can specify the home directory of the node by using 
 
 The `petri init` command is responsible for initializing the specified `--home` directory and creating the default configuration files. Except the `petri init` command, the home directory used by any other `petri` sub commands must be initialized, otherwise an error will be reported.
 
-The data of the PETRIhub node is stored in the `data` directory of the home, including blockchain data, application layer data, and index data.
+The data of the Petri node is stored in the `data` directory of the home, including blockchain data, application layer data, and index data.
 
 All configuration files are stored in the `<home-dir>/config` directory:
 
@@ -49,4 +49,4 @@ config.toml is the non-consensus configuration of the node. Different nodes can 
 
 ### app.toml
 
-app.toml provides base configuration, telemetry configuration, API configuration, gRPC configuration and state sync configuration for PETRIhub.
+app.toml provides base configuration, telemetry configuration, API configuration, gRPC configuration and state sync configuration for Petri.

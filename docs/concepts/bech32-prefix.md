@@ -2,7 +2,7 @@
 order: 5
 ---
 
-# Bech32 on PETRIhub
+# Bech32 on Petri
 
 Bech32 is a new Bitcoin address format proposed by Pieter Wuille and Greg Maxwell. Besides Bitcoin addresses, Bech32 can encode any short binary data. In the PETRI network, keys and addresses may refer to a number of different roles in the network like accounts, validators etc. The PETRI network is designed to use the Bech32 address format to provide robust integrity checks on data. The human readable part(HRP) makes it more efficient to read and the users could see error messages. More details in [bip-0173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)
 
@@ -10,16 +10,16 @@ Bech32 is a new Bitcoin address format proposed by Pieter Wuille and Greg Maxwel
 
 | HRP | Definition                              |
 | --- | --------------------------------------- |
-| iaa | PETRIhub Account Address                 |
-| iap | PETRIhub Account Public Key              |
-| iva | PETRIhub Validator's Operator Address    |
-| ivp | PETRIhub Validator's Operator Public Key |
+| iaa | Petri Account Address                 |
+| iap | Petri Account Public Key              |
+| iva | Petri Validator's Operator Address    |
+| ivp | Petri Validator's Operator Public Key |
 | ica | Tendermint Consensus Address            |
 | icp | Tendermint Consensus Public Key         |
 
 ## Encoding
 
-Not all interfaces to PETRIhub users should be exposed as bech32 interfaces. Many addresses are still in hex or base64 encoded form.
+Not all interfaces to Petri users should be exposed as bech32 interfaces. Many addresses are still in hex or base64 encoded form.
 
 To covert between other binary representation of addresses and keys, it is important to first apply the Amino encoding process before bech32 encoding.
 

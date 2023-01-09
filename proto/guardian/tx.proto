@@ -1,7 +1,7 @@
 syntax = "proto3";
-package petrihub.guardian;
+package petri.guardian;
 
-option go_package = "github.com/petrinetwork/petrihub/modules/guardian/types";
+option go_package = "github.com/mage-war/petri/modules/guardian/types";
 
 // Msg defines the guardian Msg service
 service Msg {

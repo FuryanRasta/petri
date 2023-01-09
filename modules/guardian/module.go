@@ -19,9 +19,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/petrinetwork/petrihub/modules/guardian/client/cli"
-	"github.com/petrinetwork/petrihub/modules/guardian/keeper"
-	"github.com/petrinetwork/petrihub/modules/guardian/types"
+	"github.com/mage-war/petri/modules/guardian/client/cli"
+	"github.com/mage-war/petri/modules/guardian/keeper"
+	"github.com/mage-war/petri/modules/guardian/types"
 )
 
 var (

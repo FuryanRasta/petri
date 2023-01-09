@@ -1,6 +1,6 @@
 # Farm
 
-Farm module allows you to easily create farm activities on petrihub.
+Farm module allows you to easily create farm activities on petri.
 
 ## Available Commands
 

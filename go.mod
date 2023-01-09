@@ -1,4 +1,4 @@
-module github.com/petrinetwork/petrihub
+module github.com/mage-war/petri
 
 go 1.18
 

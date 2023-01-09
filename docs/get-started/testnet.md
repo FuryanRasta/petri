@@ -4,7 +4,7 @@ order: 4
 
 # Join The Testnet
 
-After PETRI Hub 1.0 upgrade of mainnet, **Nyancat Testnet** starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of PETRInetwork can develop their apps on or interact with PETRIhub without running a node or lcd instance.
+After PETRI Hub 1.0 upgrade of mainnet, **Nyancat Testnet** starts to operate as a stable application testnet which has the same version as the mainnet, so that the service providers of MAGEwar can develop their apps on or interact with Petri without running a node or lcd instance.
 
 ## Public Endpoints
 
@@ -18,15 +18,15 @@ After PETRI Hub 1.0 upgrade of mainnet, **Nyancat Testnet** starts to operate as
 
 ### Start node from genesis
 ::tip 
-You must use Petrihub [v1.1.1](https://github.com/petrinetwork/petrihub/releases/tag/v1.1.1)[ ](https://github.com/petrinetwork/petrihub/releases/tag/v1.0.1) to initialize your node::
+You must use Petri [v1.1.1](https://github.com/mage-war/petri/releases/tag/v1.1.1)[ ](https://github.com/mage-war/petri/releases/tag/v1.0.1) to initialize your node::
 
 ```bash
 # init node
 petri init <moniker> --chain-id=nyancat-8
 
 # download public config.toml and genesis.json
-curl -o ~/.petri/config/config.toml https://github.com/petrinetwork/testnets/blob/master/nyancat/config/config.toml
-curl -o ~/.petri/config/genesis.json https://raw.githubusercontent.com/petrinetwork/testnets/master/nyancat/config/genesis.json
+curl -o ~/.petri/config/config.toml https://github.com/irisnet/testnets/blob/master/nyancat/config/config.toml
+curl -o ~/.petri/config/genesis.json https://raw.githubusercontent.com/irisnet/testnets/master/nyancat/config/genesis.json
 
 # Start the node (also running in the background, such as nohup or systemd)
 petri start

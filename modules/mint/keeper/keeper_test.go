@@ -11,8 +11,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/petrinetwork/petrihub/modules/mint/types"
-	"github.com/petrinetwork/petrihub/simapp"
+	"github.com/mage-war/petri/modules/mint/types"
+	"github.com/mage-war/petri/simapp"
 )
 
 type KeeperTestSuite struct {

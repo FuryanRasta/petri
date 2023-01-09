@@ -124,8 +124,8 @@ func (m *Params) GetMintDenom() string {
 }
 
 func init() {
-	proto.RegisterType((*Minter)(nil), "petrihub.mint.Minter")
-	proto.RegisterType((*Params)(nil), "petrihub.mint.Params")
+	proto.RegisterType((*Minter)(nil), "petri.mint.Minter")
+	proto.RegisterType((*Params)(nil), "petri.mint.Params")
 }
 
 func init() { proto.RegisterFile("mint/mint.proto", fileDescriptor_e1b9fbb701b2a577) }

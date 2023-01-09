@@ -9,7 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	"github.com/petrinetwork/petrihub/modules/guardian/types"
+	"github.com/mage-war/petri/modules/guardian/types"
 )
 
 var _ types.QueryServer = Keeper{}

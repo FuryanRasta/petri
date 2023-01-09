@@ -55,7 +55,7 @@ petri tx oracle create \
     --threshold=1 \
     --aggregate-func="avg" \
     --value-json-path="high" \
-    --chain-id=petrihub \
+    --chain-id=petri \
     --from=node0 \
     --fees=0.3petri
 ```
@@ -71,7 +71,7 @@ petri tx oracle start [feed-name] [flags]
 ### Start a "paused" feed
 
 ```bash
-petri tx oracle start test-feed --chain-id=petrihub --from=node0 --fees=0.3petri
+petri tx oracle start test-feed --chain-id=petri --from=node0 --fees=0.3petri
 ```
 
 ## petri tx oracle pause
@@ -85,7 +85,7 @@ petri tx oracle pause [feed-name] [flags]
 ### Pause a "running" feed
 
 ```bash
-petri tx oracle pause test-feed --chain-id=petrihub --from=node0 --fees=0.3petri
+petri tx oracle pause test-feed --chain-id=petri --from=node0 --fees=0.3petri
 ```
 
 ## petri tx oracle edit
@@ -112,7 +112,7 @@ petri tx oracle edit [feed-name] [flags]
 ### Edit an existed feed
 
 ```bash
-petri tx oracle edit test-feed --chain-id=petrihub --from=node0 --fees=0.3petri --latest-history=5
+petri tx oracle edit test-feed --chain-id=petri --from=node0 --fees=0.3petri --latest-history=5
 ```
 
 ## petri query oracle feed

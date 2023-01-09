@@ -37,7 +37,7 @@ petri keys add MyValidator
 Add that key into the genesis.app_state.accounts array in the genesis file
 
 :::tip
-this command lets you set the number of coins. Make sure this account has some upetri which is the only staking coin on PETRIhub
+this command lets you set the number of coins. Make sure this account has some upetri which is the only staking coin on Petri
 :::
 
 ```bash
@@ -124,8 +124,8 @@ Please refer to [Export Blockchain State](export.md)
 ### Build and Init
 
 ```bash
-# Work from the petrihub repo
-cd [your-petrihub-repo]
+# Work from the petri repo
+cd [your-petri-repo]
 
 # Build the linux binary in ./build
 make build-linux

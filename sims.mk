@@ -4,7 +4,7 @@
 ### Simulations
 
 BINDIR ?= $(GOPATH)/bin
-SIMAPP = github.com/petrinetwork/petrihub/app
+SIMAPP = github.com/mage-war/petri/app
 
 test-sim-nondeterminism:
 	@echo "Running non-determinism test..."

@@ -3,7 +3,7 @@ version: '3'
 services:
   petrinode0:
     container_name: petrinode0
-    image: petrinetwork/petrihub:latest
+    image: mage-war/petri:latest
     ports:
     - "26656-26657:26656-26657"
     volumes:
@@ -15,7 +15,7 @@ services:
 
   petrinode1:
     container_name: petrinode1
-    image: petrinetwork/petrihub:latest
+    image: mage-war/petri:latest
     ports:
     - "26659-26660:26656-26657"
     volumes:
@@ -27,7 +27,7 @@ services:
 
   petrinode2:
     container_name: petrinode2
-    image: petrinetwork/petrihub:latest
+    image: mage-war/petri:latest
     ports:
     - "26661-26662:26656-26657"
     volumes:
@@ -39,7 +39,7 @@ services:
 
   petrinode3:
     container_name: petrinode3
-    image: petrinetwork/petrihub:latest
+    image: mage-war/petri:latest
     ports:
     - "26663-26664:26656-26657"
     volumes:

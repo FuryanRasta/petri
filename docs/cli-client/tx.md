@@ -39,7 +39,7 @@ You can generate any type of txs offline by appending the flag `--generate-only`
 We use a transfer tx in the following examples:
 
 ```bash
-petri tx bank send iaa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx iaa15uys54epmd2xzhcn32szps56wvev40tt908h62 10petri --chain-id=petrihub --generate-only
+petri tx bank send iaa1w9lvhwlvkwqvg08q84n2k4nn896u9pqx93velx iaa15uys54epmd2xzhcn32szps56wvev40tt908h62 10petri --chain-id=petri --generate-only
 ```
 
 The `unsigned.json` should look like:
@@ -150,7 +150,7 @@ This command is used to broadcast an offline signed transaction to the network.
 ### Broadcast offline signed transaction
 
 ```bash
-petri tx broadcast signed.json --chain-id=petrihub
+petri tx broadcast signed.json --chain-id=petri
 ```
 
 ## petri tx multisign
@@ -168,7 +168,7 @@ No multisig key? [Create one](keys.md#create-a-multisig-key)
 :::
 
 ```bash
-petri tx bank send <from> <to> 10petri --fees=0.3petri --chain-id=petrihub --from=<multisig-keyname> --generate-only > unsigned.json
+petri tx bank send <from> <to> 10petri --fees=0.3petri --chain-id=petri --from=<multisig-keyname> --generate-only > unsigned.json
 ```
 
 ### Sign the multisig tx
@@ -186,13 +186,13 @@ Assume the multisig-threshold is 2, here we sign the `unsigned.json` by 2 of the
 Sign the tx by signer-1:
 
 ```bash
-petri tx sign unsigned.json --from=<signer-keyname-1> --chain-id=petrihub --multisig=<multisig-address> --signature-only > signed-1.json
+petri tx sign unsigned.json --from=<signer-keyname-1> --chain-id=petri --multisig=<multisig-address> --signature-only > signed-1.json
 ```
 
 Sign the tx by signer-2:
 
 ```bash
-petri tx sign unsigned.json --from=<signer-keyname-2> --chain-id=petrihub --multisig=<multisig-address> --signature-only > signed-2.json
+petri tx sign unsigned.json --from=<signer-keyname-2> --chain-id=petri --multisig=<multisig-address> --signature-only > signed-2.json
 ```
 
 #### Merge the signatures
@@ -200,7 +200,7 @@ petri tx sign unsigned.json --from=<signer-keyname-2> --chain-id=petrihub --mult
 Merge all the signatures into `signed.json`
 
 ```bash
-petri tx multisign --chain-id=petrihub unsigned.json <multisig-keyname> signed-1.json signed-2.json > signed.json
+petri tx multisign --chain-id=petri unsigned.json <multisig-keyname> signed-1.json signed-2.json > signed.json
 ```
 
 Now you can [broadcast the signed tx](#petri-tx-broadcast).
@@ -235,19 +235,19 @@ Among the possible values of `message.action`:
 |              | cosmos-sdk/MsgBeginRedelegate             | redelegate           |
 |              | cosmos-sdk/MsgUndelegate                  | unbond               |
 | slashing     | cosmos-sdk/MsgUnjail                      | unjail               |
-| coinswap     | petrimod/MsgSwapOrder                      | swap                 |
-|              | petrimod/MsgAddLiquidity                   | add_liquidity        |
-|              | petrimod/MsgRemoveLiquidity                | remove_liquidity     |
-| htlc         | petrimod/MsgCreateHTLC                     | create_htlc          |
-|              | petrimod/MsgClaimHTLC                      | claim_htlc           |
-|              | petrimod/MsgRefundHTLC                     | refund_htlc          |
-| nft          | petrimod/MsgIssueDenom                     | issue_denom          |
-|              | petrimod/MsgMintNFT                        | mint_nft             |
-|              | petrimod/MsgBurnNFT                        | burn_nft             |
-|              | petrimod/MsgTransferNFT                    | transfer_nft         |
-|              | petrimod/MsgEditNFT                        | edit_nft             |
-| record       | petrimod/MsgCreateRecord                   | create_record        |
-| token        | petrimod/MsgIssueToken                     | issue_token          |
-|              | petrimod/MsgEditToken                      | edit_token           |
-|              | petrimod/MsgTransferTokenOwner             | transfer_token_owner |
-|              | petrimod/MsgMintToken                      | mint_token           |
+| coinswap     | irismod/MsgSwapOrder                      | swap                 |
+|              | irismod/MsgAddLiquidity                   | add_liquidity        |
+|              | irismod/MsgRemoveLiquidity                | remove_liquidity     |
+| htlc         | irismod/MsgCreateHTLC                     | create_htlc          |
+|              | irismod/MsgClaimHTLC                      | claim_htlc           |
+|              | irismod/MsgRefundHTLC                     | refund_htlc          |
+| nft          | irismod/MsgIssueDenom                     | issue_denom          |
+|              | irismod/MsgMintNFT                        | mint_nft             |
+|              | irismod/MsgBurnNFT                        | burn_nft             |
+|              | irismod/MsgTransferNFT                    | transfer_nft         |
+|              | irismod/MsgEditNFT                        | edit_nft             |
+| record       | irismod/MsgCreateRecord                   | create_record        |
+| token        | irismod/MsgIssueToken                     | issue_token          |
+|              | irismod/MsgEditToken                      | edit_token           |
+|              | irismod/MsgTransferTokenOwner             | transfer_token_owner |
+|              | irismod/MsgMintToken                      | mint_token           |

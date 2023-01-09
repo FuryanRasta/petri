@@ -6,7 +6,7 @@ order: 1
 
 ## Introduction
 
-PETRIhub can report and serve the Prometheus metrics, which can be consumed by Prometheus collector(s).
+Petri can report and serve the Prometheus metrics, which can be consumed by Prometheus collector(s).
 
 This functionality is disabled by default.
 
@@ -66,18 +66,18 @@ Consensus metrics, namespace: `tendermint`
 | state_recheck_time                   | Histogram |                  | Time cost on recheck in ms                                      |
 | state_app_hash_conflict              | Counter   | proposer, height | App hash conflict error                                         |
 
-PETRIhub metrics also contains tendermint metrics, Visit [tendermint metrics](https://github.com/petrinetwork/tendermint/blob/petrinetwork/master/docs/tendermint-core/metrics.md) for more information.
+Petri metrics also contains tendermint metrics, Visit [tendermint metrics](https://github.com/irisnet/tendermint/blob/irisnet/master/docs/tendermint-core/metrics.md) for more information.
 
 ## Start Monitor
 
-This is an example for getting started with the PETRIhub Monitor by using docker.
+This is an example for getting started with the Petri Monitor by using docker.
 
 ### Edit Prometheus config file
 
 You can download the example [prometheus.yml](https://raw.githubusercontent.com/prometheus/prometheus/master/documentation/examples/prometheus.yml)  to the `~/volumes/prometheus/` and add a job under the `scrape_configs` of the `prometheus.yml`:
 
 ```yaml
-      - job_name: petrihub
+      - job_name: petri
           static_configs:
           - targets: ['localhost:26660']
             labels:

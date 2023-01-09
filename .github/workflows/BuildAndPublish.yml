@@ -17,7 +17,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=petrinetwork/petrihub
+          DOCKER_IMAGE=mage-war/petri
           VERSION=noop
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
@@ -45,7 +45,7 @@ jobs:
           username: ${{secrets.DOCKER_USER}}
           password: ${{secrets.DOCKER_PASS}}
   
-      # Using the github action, push the PETRIhub amd64/arm64 image to Docker Hub
+      # Using the github action, push the Petri amd64/arm64 image to Docker Hub
       - name: Publish to Docker Hub
         uses: docker/build-push-action@v2
         with:
@@ -53,9 +53,9 @@ jobs:
           tags: ${{ steps.prep.outputs.tags }}
           platforms: linux/amd64,linux/arm64
           
-#       - name: Build petrihub image
-#         run: source ~/.bashrc; sudo docker build -t petrinetwork/petrihub:latest .
+#       - name: Build petri image
+#         run: source ~/.bashrc; sudo docker build -t mage-war/petri:latest .
 #       - name: Login dockerhub
 #         run: sudo docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_PASS}}
-#       - name: Publish petrihub image
-#         run: sudo docker push petrinetwork/petrihub:latest
+#       - name: Publish petri image
+#         run: sudo docker push mage-war/petri:latest

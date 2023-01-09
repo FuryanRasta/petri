@@ -8,11 +8,11 @@ This specification briefly introduces the functionality of stake module and what
 
 ### Voting power
 
-Voting power is a consensus concept. PETRIhub is a Byzantine-fault-tolerant POS blockchain network. During the consensus process, a set of validators will vote the proposal block. If a validator thinks the proposal block is valid, it will vote `yes`, otherwise, it will vote nil. The votes from different validator don't have the same weight. The weight of a vote is called the voting power of the corresponding validator.
+Voting power is a consensus concept. Petri is a Byzantine-fault-tolerant POS blockchain network. During the consensus process, a set of validators will vote the proposal block. If a validator thinks the proposal block is valid, it will vote `yes`, otherwise, it will vote nil. The votes from different validator don't have the same weight. The weight of a vote is called the voting power of the corresponding validator.
 
 ### Validator
 
-Validator is a full PETRIhub node. If its voting power is zero, it is just a normal full node or a validator candidate. Once its voting power is positive, then it is a real validator.
+Validator is a full Petri node. If its voting power is zero, it is just a normal full node or a validator candidate. Once its voting power is positive, then it is a real validator.
 
 ### Delegator && Delegation
 
@@ -99,26 +99,26 @@ Example Output:
 - Edit validator
 
 ```bash
-petri tx staking edit-validator --from=<key-name> --chain-id=petrihub --fees=0.3petri --commission-rate=0.15 --moniker=<new-name>
+petri tx staking edit-validator --from=<key-name> --chain-id=petri --fees=0.3petri --commission-rate=0.15 --moniker=<new-name>
 ```
 
 - Delegate tokens to other validators
 If you just want to be a delegator, you can skip the above steps.
 
 ```bash
-petri tx staking delegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000petri --chain-id=petrihub --from=<key-name> --fees=0.3petri
+petri tx staking delegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000petri --chain-id=petri --from=<key-name> --fees=0.3petri
 ```
 
 - Unbond tokens from a validator
 
 ```bash
-petri tx staking unbond iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000petri --chain-id=petrihub --from=<key-name> --fees=0.3petri
+petri tx staking unbond iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke 1000petri --chain-id=petri --from=<key-name> --fees=0.3petri
 ```
   
 - Redelegate tokens to another validator
 
 ```bash
-petri tx staking redelegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke iva1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 100petri --from mykey --chain-id=petrihub --from=<key-name> --fees=0.3petri
+petri tx staking redelegate iva14n9md3sq9xwscs96za8n85m0j9y2yu3cagxgke iva1l2rsakp388kuv9k8qzq6lrm9taddae7fpx59wm 100petri --from mykey --chain-id=petri --from=<key-name> --fees=0.3petri
 ```
 
 For other staking commands, please refer to [stake cli client](../cli-client/staking.md)

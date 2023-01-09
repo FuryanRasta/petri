@@ -1,4 +1,4 @@
 # White Paper
 
-- [English](https://github.com/petrinetwork/petrinetwork/blob/master/WHITEPAPER.md)
+- [English](https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md)
 

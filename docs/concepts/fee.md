@@ -8,7 +8,7 @@ Certain types of transactions may consume more gas (e.g. creating validators), s
 
 ## Fee
 
-To secure their own validator node and maintain the availability of blockchain network, validators in PETRIhub need a lot of equipments and resources. Thus, every transactions in PETRIhub should pay some fee to validators. The parameter in commands is used to specify the maximum fee the user wants to pay for their transaction.
+To secure their own validator node and maintain the availability of blockchain network, validators in Petri need a lot of equipments and resources. Thus, every transactions in Petri should pay some fee to validators. The parameter in commands is used to specify the maximum fee the user wants to pay for their transaction.
 
 ## Gas
 
@@ -26,7 +26,7 @@ The total gas needed for executing the transaction is the sum of gas needed for 
 Example
 
 ```bash
-petri tx bank send <from-address> <to-address>  1petri --fees=0.3petri --gas=50000 --chain-id=petrihub --from=<key-name>
+petri tx bank send <from-address> <to-address>  1petri --fees=0.3petri --gas=50000 --chain-id=petri --from=<key-name>
 ```
 
 This example is a transfer transaction. The maximum fee `--fee` is set to be 0.3petri and the maximum gas `--gas` is set to be 50000. Therefore, the gas price here is 0.000006petri/Gas. Suppose that 10000 gas is used to execute the transaction, then 0.06petri will be paid to validators and left 0.24petri will be refunded to user.

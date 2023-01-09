@@ -4,7 +4,7 @@ order: 4
 
 # gRPC Client
 
-petrihub v1.0.0 (depends on Cosmos-SDK v0.41) introduced Protobuf as the main [encoding](https://github.com/cosmos/cosmos-sdk/blob/master/docs/core/encoding.md) library, and this brings a wide range of Protobuf-based tools that can be plugged into the SDK. One such tool is [gRPC](https://grpc.io), a modern open source high performance RPC framework that has decent client support in several languages.
+petri v1.0.0 (depends on Cosmos-SDK v0.41) introduced Protobuf as the main [encoding](https://github.com/cosmos/cosmos-sdk/blob/master/docs/core/encoding.md) library, and this brings a wide range of Protobuf-based tools that can be plugged into the SDK. One such tool is [gRPC](https://grpc.io), a modern open source high performance RPC framework that has decent client support in several languages.
 
 ## gRPC Server Port, Activation and Configuration
 
@@ -17,7 +17,7 @@ Once the gRPC server is started, you can send requests to it using a gRPC client
 
 ## gRPC Endpoints
 
-An overview of all available gRPC endpoints shipped with the PETRIhub is [Protobuf documention](./proto-docs.md).
+An overview of all available gRPC endpoints shipped with the Petri is [Protobuf documention](./proto-docs.md).
 
 ## Generating, Signing and Broadcasting Transactions
 

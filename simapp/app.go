@@ -114,14 +114,14 @@ import (
 	tokenkeeper "github.com/irisnet/irismod/modules/token/keeper"
 	tokentypes "github.com/irisnet/irismod/modules/token/types"
 
-	"github.com/petrinetwork/petrihub/address"
-	"github.com/petrinetwork/petrihub/lite"
-	"github.com/petrinetwork/petrihub/modules/guardian"
-	guardiankeeper "github.com/petrinetwork/petrihub/modules/guardian/keeper"
-	guardiantypes "github.com/petrinetwork/petrihub/modules/guardian/types"
-	"github.com/petrinetwork/petrihub/modules/mint"
-	mintkeeper "github.com/petrinetwork/petrihub/modules/mint/keeper"
-	minttypes "github.com/petrinetwork/petrihub/modules/mint/types"
+	"github.com/mage-war/petri/address"
+	"github.com/mage-war/petri/lite"
+	"github.com/mage-war/petri/modules/guardian"
+	guardiankeeper "github.com/mage-war/petri/modules/guardian/keeper"
+	guardiantypes "github.com/mage-war/petri/modules/guardian/types"
+	"github.com/mage-war/petri/modules/mint"
+	mintkeeper "github.com/mage-war/petri/modules/mint/keeper"
+	minttypes "github.com/mage-war/petri/modules/mint/types"
 
 	"github.com/irisnet/irismod/modules/farm"
 	farmkeeper "github.com/irisnet/irismod/modules/farm/keeper"
@@ -306,7 +306,7 @@ func init() {
 
 	nativeToken = tokentypes.Token{
 		Symbol:        "petri",
-		Name:          "Petrihub staking token",
+		Name:          "Petri staking token",
 		Scale:         6,
 		MinUnit:       "upetri",
 		InitialSupply: 2000000000,

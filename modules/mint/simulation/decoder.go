@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/petrinetwork/petrihub/modules/mint/types"
+	"github.com/mage-war/petri/modules/mint/types"
 )
 
 // NewDecodeStore returns a function closure that unmarshals the KVPair's values

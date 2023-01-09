@@ -2,7 +2,7 @@
 order: 5
 ---
 
-# PETRIhub Wallets
+# Petri Wallets
 
 These web and mobile wallets allow you to store & transfer PETRI, delegate PETRI to validators, and some of them also support ATOM. Note that we do not endorse any of the wallets, they are listed for your convenience.
 

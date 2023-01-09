@@ -1,18 +1,18 @@
 syntax = "proto3";
-package petrihub.guardian;
+package petri.guardian;
 
 import "gogoproto/gogo.proto";
 import "guardian/guardian.proto";
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
-option go_package = "github.com/petrinetwork/petrihub/modules/guardian/types";
+option go_package = "github.com/mage-war/petri/modules/guardian/types";
 
 // Query creates service with guardian as RPC
 service Query {
     // Supers returns all Supers
     rpc Supers(QuerySupersRequest) returns (QuerySupersResponse) {
-        option (google.api.http).get = "/petrihub/guardian/supers";
+        option (google.api.http).get = "/petri/guardian/supers";
     }
 }
 

@@ -19,11 +19,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/petrinetwork/petrihub/modules/mint/client/cli"
-	"github.com/petrinetwork/petrihub/modules/mint/client/rest"
-	"github.com/petrinetwork/petrihub/modules/mint/keeper"
-	"github.com/petrinetwork/petrihub/modules/mint/simulation"
-	"github.com/petrinetwork/petrihub/modules/mint/types"
+	"github.com/mage-war/petri/modules/mint/client/cli"
+	"github.com/mage-war/petri/modules/mint/client/rest"
+	"github.com/mage-war/petri/modules/mint/keeper"
+	"github.com/mage-war/petri/modules/mint/simulation"
+	"github.com/mage-war/petri/modules/mint/types"
 )
 
 var (

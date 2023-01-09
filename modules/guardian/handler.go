@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/petrinetwork/petrihub/modules/guardian/keeper"
-	"github.com/petrinetwork/petrihub/modules/guardian/types"
+	"github.com/mage-war/petri/modules/guardian/keeper"
+	"github.com/mage-war/petri/modules/guardian/types"
 )
 
 // NewHandler returns a handler for all "guardian" type messages.

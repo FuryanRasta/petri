@@ -1,9 +1,9 @@
 syntax = "proto3";
-package petrihub.guardian;
+package petri.guardian;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/petrinetwork/petrihub/modules/guardian/types";
+option go_package = "github.com/mage-war/petri/modules/guardian/types";
 
 // Super defines the super standard
 message Super {

@@ -10,8 +10,8 @@ package rest_test
 // 	"github.com/cosmos/cosmos-sdk/testutil/network"
 // 	"github.com/cosmos/cosmos-sdk/types/rest"
 
-// 	minttypes "github.com/petrinetwork/petrihub/modules/mint/types"
-// 	"github.com/petrinetwork/petrihub/simapp"
+// 	minttypes "github.com/mage-war/petri/modules/mint/types"
+// 	"github.com/mage-war/petri/simapp"
 // )
 
 // type IntegrationTestSuite struct {
@@ -47,7 +47,7 @@ package rest_test
 // 	val := s.network.Validators[0]
 // 	baseURL := val.APIAddress
 // 	//------test GetCmdQueryParams()-------------
-// 	url := fmt.Sprintf("%s/petrihub/mint/params", baseURL)
+// 	url := fmt.Sprintf("%s/petri/mint/params", baseURL)
 // 	resp, err := rest.GetRequest(url)
 // 	respType := proto.Message(&minttypes.QueryParamsResponse{})
 // 	s.Require().NoError(err)

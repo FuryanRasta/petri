@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	mintcli "github.com/petrinetwork/petrihub/modules/mint/client/cli"
+	mintcli "github.com/mage-war/petri/modules/mint/client/cli"
 )
 
 func QueryParamsExec(clientCtx client.Context, extraArgs ...string) (testutil.BufferWriter, error) {

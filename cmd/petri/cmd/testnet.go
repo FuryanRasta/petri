@@ -36,7 +36,7 @@ import (
 	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	guardiantypes "github.com/petrinetwork/petrihub/modules/guardian/types"
+	guardiantypes "github.com/mage-war/petri/modules/guardian/types"
 )
 
 var (

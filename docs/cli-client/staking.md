@@ -239,7 +239,7 @@ petri tx staking create-validator [flags]
 ### Create a validator
 
 ```bash
-petri tx staking create-validator --chain-id=petrihub --from=<key-name> --fees=0.3petri --pubkey=<validator-pubKey> --commission-rate=0.1 --amount=100petri --moniker=<validator-name>
+petri tx staking create-validator --chain-id=petri --from=<key-name> --fees=0.3petri --pubkey=<validator-pubKey> --commission-rate=0.1 --amount=100petri --moniker=<validator-name>
 ```
 
 :::tip
@@ -269,7 +269,7 @@ petri tx staking edit-validator [flags]
 ### Edit validator information
 
 ```bash
-petri tx staking edit-validator --from=<key-name> --chain-id=petrihub --fees=0.3petri --commission-rate=0.10 --moniker=<validator-name>
+petri tx staking edit-validator --from=<key-name> --chain-id=petri --fees=0.3petri --commission-rate=0.10 --moniker=<validator-name>
 ```
 
 ### Upload validator avatar
@@ -285,7 +285,7 @@ petri tx staking delegate [validator-addr] [amount] [flags]
 ```
 
 ```bash
-petri tx staking delegate <iva...> <amount> --chain-id=petrihub --from=<key-name> --fees=0.3petri
+petri tx staking delegate <iva...> <amount> --chain-id=petri --from=<key-name> --fees=0.3petri
 ```
 
 ## petri tx staking unbond
@@ -299,7 +299,7 @@ petri tx staking unbond [validator-addr] [amount] [flags]
 ### Unbond some tokens from a validator
 
 ```bash
-petri tx staking unbond <iva...> 10petri --from=<key-name> --chain-id=petrihub --fees=0.3petri
+petri tx staking unbond <iva...> 10petri --from=<key-name> --chain-id=petri --fees=0.3petri
 ```
 
 ## petri tx staking redelegate
@@ -317,5 +317,5 @@ petri tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount] [
 ### Redelegate some tokens to another validator
 
 ```bash
-petri tx staking redelegate <iva...> <iva...> 10petri --chain-id=petrihub --from=<key-name> --fees=0.3petri
+petri tx staking redelegate <iva...> <iva...> 10petri --chain-id=petri --from=<key-name> --fees=0.3petri
 ```

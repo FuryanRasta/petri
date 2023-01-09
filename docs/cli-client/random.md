@@ -32,10 +32,10 @@ Post a random number request to the PETRI Hub, the random number will be generat
 
 ```bash
 # without oracle
-petri tx random request --block-interval=100 --from=<key-name> --chain-id=petrihub --fees=0.3petri
+petri tx random request --block-interval=100 --from=<key-name> --chain-id=petri --fees=0.3petri
 
 # with oracle
-petri tx random request --block-interval=100 --oracle=true --service-fee-cap=1petri --from=<key-name> --chain-id=petrihub --fees=0.3petri
+petri tx random request --block-interval=100 --oracle=true --service-fee-cap=1petri --from=<key-name> --chain-id=petri --fees=0.3petri
 ```
 
 :::tip

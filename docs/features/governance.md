@@ -196,7 +196,7 @@ echo '{
     "deposit": "1000petri"
 }' > proposal.json
 
-petri tx gov submit-proposal param-change proposal.json --from=<key-name> --fees=0.3petri --chain-id=petrihub
+petri tx gov submit-proposal param-change proposal.json --from=<key-name> --fees=0.3petri --chain-id=petri
 ```
 
 ### Community pool spending
@@ -213,7 +213,7 @@ echo '{
     "deposit": "1000petri"
 }' > proposal.json
 
-petri tx gov submit-proposal community-pool-spend proposal.json --from=<key-name> --fees=0.3petri --chain-id=petrihub
+petri tx gov submit-proposal community-pool-spend proposal.json --from=<key-name> --fees=0.3petri --chain-id=petri
 ```
 
 ### Software upgrade

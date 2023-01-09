@@ -1,12 +1,12 @@
 #
-# Build image: docker build -t petrinetwork/petrihub .
+# Build image: docker build -t mage-war/petri .
 #
 FROM golang:1.18-alpine3.16 as builder
 
 # Set up dependencies
 ENV PACKAGES make gcc git libc-dev bash linux-headers eudev-dev
 
-WORKDIR /petrihub
+WORKDIR /petri
 
 # Add source files
 COPY . .
@@ -27,4 +27,4 @@ EXPOSE 26657
 # metrics port
 EXPOSE 26660
 
-COPY --from=builder /petrihub/build/ /usr/local/bin/
+COPY --from=builder /petri/build/ /usr/local/bin/

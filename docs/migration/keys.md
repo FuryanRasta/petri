@@ -1,6 +1,6 @@
 # Keys Migrate
 
-The keyfile (private key) of petrihub v0.16.x uses db storage. The new version v1.0+ will offer a new way to store user private keys. In order to support the migration of the old keyfile to the new version, there are two solutions provided.
+The keyfile (private key) of petri v0.16.x uses db storage. The new version v1.0+ will offer a new way to store user private keys. In order to support the migration of the old keyfile to the new version, there are two solutions provided.
 
 ## Mnemonic
 
@@ -12,9 +12,9 @@ petri keys add n2 --recover
 
 ## Keystore
 
-This way is suitable for users who have lost the mnemonic but saved the db file of the keys, or the keystore file of the keys. The format of the keystore file of petrihub v0.16.x is similar to that of Ethereum, and v1.0+ is also fully compatible with a new format. Therefore, the user can export the old private key using the keystore, and then use the v1.0+ version of petrihub to import the keystore to complete the key migration.The operation process is as follows:
+This way is suitable for users who have lost the mnemonic but saved the db file of the keys, or the keystore file of the keys. The format of the keystore file of petri v0.16.x is similar to that of Ethereum, and v1.0+ is also fully compatible with a new format. Therefore, the user can export the old private key using the keystore, and then use the v1.0+ version of petri to import the keystore to complete the key migration.The operation process is as follows:
 
-**1. Use petrihub v0.16.x to export keystore file**
+**1. Use petri v0.16.x to export keystore file**
 
 ```bash
 petricli keys export test1 --output-file=key.json --home ./petricli_test 
@@ -45,7 +45,7 @@ output:
 }
     ```
 
-**2. Use petrihub v1.0.1 to import keystore file**
+**2. Use petri v1.0.1 to import keystore file**
 
 ```bash
 petri keys import n2 key.json --keyring-backend file 
